@@ -54,7 +54,8 @@ def extract_agents(marketplace_file: Path) -> List[Dict[str, Any]]:
                     'plugin': plugin_name,
                     'source_path': str(full_path),
                     'category': plugin.get('category', 'general'),
-                    'keywords': plugin.get('keywords', [])
+                    'keywords': plugin.get('keywords', []),
+                    'content': content  # Full markdown content
                 })
 
     return agents_list
@@ -97,7 +98,8 @@ def extract_commands(marketplace_file: Path) -> List[Dict[str, Any]]:
                     'plugin': plugin_name,
                     'source_path': str(full_path),
                     'category': plugin.get('category', 'general'),
-                    'keywords': plugin.get('keywords', [])
+                    'keywords': plugin.get('keywords', []),
+                    'content': content  # Full markdown content
                 })
 
     return commands_list
@@ -131,13 +133,35 @@ def extract_skills(marketplace_file: Path) -> List[Dict[str, Any]]:
 
                 skill_name = frontmatter.get('name', skill_path.split('/')[-1])
 
+                # Also read any reference/asset files
+                skill_dir = skill_file.parent
+                reference_files = {}
+                asset_files = {}
+
+                # Check for references directory
+                ref_dir = skill_dir / 'references'
+                if ref_dir.exists():
+                    for ref_file in ref_dir.glob('*.md'):
+                        with open(ref_file) as f:
+                            reference_files[ref_file.name] = f.read()
+
+                # Check for assets directory
+                assets_dir = skill_dir / 'assets'
+                if assets_dir.exists():
+                    for asset_file in assets_dir.glob('*.md'):
+                        with open(asset_file) as f:
+                            asset_files[asset_file.name] = f.read()
+
                 skills_list.append({
                     'name': skill_name,
                     'description': frontmatter.get('description', ''),
                     'plugin': plugin_name,
                     'source_path': str(skill_file),
                     'category': plugin.get('category', 'general'),
-                    'keywords': plugin.get('keywords', [])
+                    'keywords': plugin.get('keywords', []),
+                    'content': content,  # Full SKILL.md content
+                    'references': reference_files,  # Reference files
+                    'assets': asset_files  # Asset files
                 })
 
     return skills_list

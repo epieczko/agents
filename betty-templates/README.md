@@ -16,15 +16,17 @@ This directory contains extracted Claude Code artifacts from the `wshobson/agent
 
 ### Core Artifact Files
 
-| File | Description | Count |
-|------|-------------|-------|
-| `agents.json` | All AI agents with descriptions and metadata | 146 |
-| `commands.json` | All slash commands and workflows | 70 |
-| `skills.json` | All agent skills with progressive disclosure | 58 |
-| `plugins.json` | Plugin metadata and organization | 65 |
-| `hooks.json` | Git hooks (none in this repo) | 0 |
-| `mcps.json` | MCP servers (none in this repo) | 0 |
-| `summary.json` | Repository overview and statistics | - |
+| File | Description | Count | Size |
+|------|-------------|-------|------|
+| `agents.json` | All AI agents with **full .md content** | 146 | 1.2 MB |
+| `commands.json` | All slash commands with **full .md content** | 70 | 1.3 MB |
+| `skills.json` | All agent skills with **full content + references + assets** | 58 | 917 KB |
+| `plugins.json` | Plugin metadata and organization | 65 | 29 KB |
+| `hooks.json` | Git hooks (none in this repo) | 0 | - |
+| `mcps.json` | MCP servers (none in this repo) | 0 | - |
+| `summary.json` | Repository overview and statistics | - | <1 KB |
+
+**✨ NEW: JSON files now contain the complete markdown content of each artifact, not just metadata!**
 
 ### Curated Recommendations
 
@@ -155,11 +157,15 @@ Install specific plugins from the marketplace:
       "plugin": "python-development",
       "source_path": "plugins/python-development/agents/python-pro.md",
       "category": "languages",
-      "keywords": ["python", "django", "fastapi", "async", "backend"]
+      "keywords": ["python", "django", "fastapi", "async", "backend"],
+      "content": "---\nname: python-pro\ndescription: Master Python...\n---\n\n[FULL MARKDOWN CONTENT]"
     }
   ]
 }
 ```
+
+**Key Field:**
+- **`content`**: Full markdown file content including YAML frontmatter (ready to write directly to file)
 
 ### Commands Structure
 
@@ -174,11 +180,15 @@ Install specific plugins from the marketplace:
       "plugin": "python-development",
       "source_path": "plugins/python-development/commands/python-scaffold.md",
       "category": "languages",
-      "keywords": ["python", "scaffolding", "project-setup"]
+      "keywords": ["python", "scaffolding", "project-setup"],
+      "content": "# Python Project Scaffolding\n\n[FULL MARKDOWN CONTENT]"
     }
   ]
 }
 ```
+
+**Key Field:**
+- **`content`**: Full markdown command file (ready to write directly to file)
 
 ### Skills Structure
 
@@ -192,11 +202,24 @@ Install specific plugins from the marketplace:
       "plugin": "python-development",
       "source_path": "plugins/python-development/skills/async-python-patterns/SKILL.md",
       "category": "languages",
-      "keywords": ["python", "async", "concurrency"]
+      "keywords": ["python", "async", "concurrency"],
+      "content": "---\nname: async-python-patterns\n...\n[FULL SKILL.md CONTENT]",
+      "references": {
+        "api-best-practices.md": "[CONTENT]",
+        "examples.md": "[CONTENT]"
+      },
+      "assets": {
+        "templates.md": "[CONTENT]"
+      }
     }
   ]
 }
 ```
+
+**Key Fields:**
+- **`content`**: Full SKILL.md markdown content
+- **`references`**: Object with reference filenames as keys and full content as values
+- **`assets`**: Object with asset filenames as keys and full content as values
 
 ## 🔍 Finding What You Need
 
