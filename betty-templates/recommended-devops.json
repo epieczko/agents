@@ -1,0 +1,176 @@
+{
+  "name": "DevOps & Infrastructure Stack",
+  "description": "Complete DevOps toolkit for cloud infrastructure, Kubernetes, CI/CD, and observability",
+  "recommended_for": "DevOps engineers, SREs, and infrastructure teams",
+  "agents": [
+    {
+      "name": "kubernetes-architect",
+      "reason": "K8s deployment and configuration expert",
+      "plugin": "kubernetes-operations",
+      "priority": "high"
+    },
+    {
+      "name": "cloud-architect",
+      "reason": "Multi-cloud (AWS/Azure/GCP) infrastructure",
+      "plugin": "cloud-infrastructure",
+      "priority": "high"
+    },
+    {
+      "name": "terraform-specialist",
+      "reason": "Infrastructure-as-code automation",
+      "plugin": "cloud-infrastructure",
+      "priority": "high"
+    },
+    {
+      "name": "deployment-engineer",
+      "reason": "Deployment strategies and automation",
+      "plugin": "deployment-strategies",
+      "priority": "high"
+    },
+    {
+      "name": "observability-engineer",
+      "reason": "Monitoring, logging, and distributed tracing",
+      "plugin": "observability-monitoring",
+      "priority": "high"
+    },
+    {
+      "name": "devops-troubleshooter",
+      "reason": "Production debugging and incident response",
+      "plugin": "incident-response",
+      "priority": "medium"
+    },
+    {
+      "name": "incident-responder",
+      "reason": "Incident management and resolution",
+      "plugin": "incident-response",
+      "priority": "medium"
+    },
+    {
+      "name": "security-auditor",
+      "reason": "Security scanning and compliance",
+      "plugin": "security-scanning",
+      "priority": "medium"
+    }
+  ],
+  "commands": [
+    {
+      "name": "workflow-automate",
+      "reason": "CI/CD pipeline automation",
+      "plugin": "cicd-automation",
+      "priority": "high"
+    },
+    {
+      "name": "monitor-setup",
+      "reason": "Observability stack configuration",
+      "plugin": "observability-monitoring",
+      "priority": "high"
+    },
+    {
+      "name": "security-hardening",
+      "reason": "Automated security hardening",
+      "plugin": "security-scanning",
+      "priority": "high"
+    },
+    {
+      "name": "incident-response",
+      "reason": "Incident response workflow",
+      "plugin": "incident-response",
+      "priority": "medium"
+    },
+    {
+      "name": "config-validate",
+      "reason": "Pre-deployment validation",
+      "plugin": "deployment-validation",
+      "priority": "medium"
+    }
+  ],
+  "skills": [
+    {
+      "name": "k8s-manifest-generator",
+      "reason": "Generate Kubernetes manifests",
+      "plugin": "kubernetes-operations",
+      "priority": "high"
+    },
+    {
+      "name": "helm-chart-scaffolding",
+      "reason": "Helm chart templates and patterns",
+      "plugin": "kubernetes-operations",
+      "priority": "high"
+    },
+    {
+      "name": "gitops-workflow",
+      "reason": "ArgoCD and GitOps deployment",
+      "plugin": "kubernetes-operations",
+      "priority": "high"
+    },
+    {
+      "name": "k8s-security-policies",
+      "reason": "Kubernetes security and RBAC",
+      "plugin": "kubernetes-operations",
+      "priority": "high"
+    },
+    {
+      "name": "terraform-module-library",
+      "reason": "Reusable Terraform modules",
+      "plugin": "cloud-infrastructure",
+      "priority": "high"
+    },
+    {
+      "name": "multi-cloud-architecture",
+      "reason": "Multi-cloud design patterns",
+      "plugin": "cloud-infrastructure",
+      "priority": "medium"
+    },
+    {
+      "name": "cost-optimization",
+      "reason": "Cloud cost reduction strategies",
+      "plugin": "cloud-infrastructure",
+      "priority": "medium"
+    },
+    {
+      "name": "github-actions-templates",
+      "reason": "GitHub Actions workflow templates",
+      "plugin": "cicd-automation",
+      "priority": "high"
+    },
+    {
+      "name": "deployment-pipeline-design",
+      "reason": "CI/CD pipeline architecture",
+      "plugin": "cicd-automation",
+      "priority": "medium"
+    },
+    {
+      "name": "prometheus-configuration",
+      "reason": "Prometheus setup and configuration",
+      "plugin": "observability-monitoring",
+      "priority": "high"
+    },
+    {
+      "name": "grafana-dashboards",
+      "reason": "Monitoring dashboard templates",
+      "plugin": "observability-monitoring",
+      "priority": "medium"
+    },
+    {
+      "name": "distributed-tracing",
+      "reason": "Distributed tracing implementation",
+      "plugin": "observability-monitoring",
+      "priority": "medium"
+    },
+    {
+      "name": "sast-configuration",
+      "reason": "Static security analysis setup",
+      "plugin": "security-scanning",
+      "priority": "medium"
+    }
+  ],
+  "quick_install_plugins": [
+    "kubernetes-operations",
+    "cloud-infrastructure",
+    "cicd-automation",
+    "observability-monitoring",
+    "deployment-strategies",
+    "security-scanning",
+    "incident-response"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "name": "AI/ML Development Stack",
+  "description": "LLM application development, prompt engineering, RAG, and ML operations",
+  "recommended_for": "AI/ML engineers building LLM applications, RAG systems, and ML pipelines",
+  "agents": [
+    {
+      "name": "ai-engineer",
+      "reason": "LLM application architecture and development",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "prompt-engineer",
+      "reason": "Prompt optimization and engineering",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "ml-engineer",
+      "reason": "ML model training and deployment",
+      "plugin": "machine-learning-ops",
+      "priority": "high"
+    },
+    {
+      "name": "data-scientist",
+      "reason": "Data analysis and ML workflows",
+      "plugin": "machine-learning-ops",
+      "priority": "medium"
+    },
+    {
+      "name": "mlops-engineer",
+      "reason": "ML pipeline automation and monitoring",
+      "plugin": "machine-learning-ops",
+      "priority": "medium"
+    },
+    {
+      "name": "data-engineer",
+      "reason": "ETL pipelines and data infrastructure",
+      "plugin": "data-engineering",
+      "priority": "medium"
+    },
+    {
+      "name": "python-pro",
+      "reason": "Python expertise for ML/AI development",
+      "plugin": "python-development",
+      "priority": "medium"
+    }
+  ],
+  "commands": [
+    {
+      "name": "langchain-agent",
+      "reason": "Build LangChain agent systems",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "ai-assistant",
+      "reason": "Create AI assistant applications",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "prompt-optimize",
+      "reason": "Optimize prompts for better results",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "ml-pipeline",
+      "reason": "ML training pipeline workflow",
+      "plugin": "machine-learning-ops",
+      "priority": "medium"
+    },
+    {
+      "name": "data-pipeline",
+      "reason": "Data pipeline construction",
+      "plugin": "data-engineering",
+      "priority": "medium"
+    }
+  ],
+  "skills": [
+    {
+      "name": "langchain-architecture",
+      "reason": "LangChain patterns and best practices",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "prompt-engineering-patterns",
+      "reason": "Advanced prompt engineering techniques",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "rag-implementation",
+      "reason": "Retrieval-Augmented Generation systems",
+      "plugin": "llm-application-dev",
+      "priority": "high"
+    },
+    {
+      "name": "llm-evaluation",
+      "reason": "LLM performance evaluation methods",
+      "plugin": "llm-application-dev",
+      "priority": "medium"
+    },
+    {
+      "name": "ml-pipeline-workflow",
+      "reason": "ML training and deployment pipelines",
+      "plugin": "machine-learning-ops",
+      "priority": "high"
+    },
+    {
+      "name": "async-python-patterns",
+      "reason": "Async patterns for AI applications",
+      "plugin": "python-development",
+      "priority": "medium"
+    },
+    {
+      "name": "python-performance-optimization",
+      "reason": "Optimize Python for ML workloads",
+      "plugin": "python-development",
+      "priority": "medium"
+    }
+  ],
+  "quick_install_plugins": [
+    "llm-application-dev",
+    "machine-learning-ops",
+    "data-engineering",
+    "python-development"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "name": "Essential Development Tools",
+  "description": "Core agents, commands, and skills recommended for general software development in Betty",
+  "recommended_for": "All developers - baseline productivity tools",
+  "agents": [
+    {
+      "name": "debugger",
+      "reason": "Essential for troubleshooting across all languages",
+      "plugin": "debugging-toolkit",
+      "priority": "high"
+    },
+    {
+      "name": "code-reviewer",
+      "reason": "AI-powered code quality and architectural review",
+      "plugin": "code-documentation",
+      "priority": "high"
+    },
+    {
+      "name": "python-pro",
+      "reason": "Modern Python development expert (if using Python)",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "typescript-pro",
+      "reason": "TypeScript and modern JavaScript expert",
+      "plugin": "javascript-typescript",
+      "priority": "high"
+    },
+    {
+      "name": "backend-architect",
+      "reason": "API design and backend architecture expertise",
+      "plugin": "backend-development",
+      "priority": "medium"
+    },
+    {
+      "name": "test-automator",
+      "reason": "Automated testing across languages",
+      "plugin": "unit-testing",
+      "priority": "medium"
+    },
+    {
+      "name": "security-auditor",
+      "reason": "Security scanning and compliance",
+      "plugin": "security-scanning",
+      "priority": "medium"
+    },
+    {
+      "name": "docs-architect",
+      "reason": "Documentation generation and maintenance",
+      "plugin": "documentation-generation",
+      "priority": "low"
+    }
+  ],
+  "commands": [
+    {
+      "name": "smart-debug",
+      "reason": "Interactive debugging workflow",
+      "plugin": "debugging-toolkit",
+      "priority": "high"
+    },
+    {
+      "name": "pr-enhance",
+      "reason": "Enhance pull requests with AI",
+      "plugin": "git-pr-workflows",
+      "priority": "high"
+    },
+    {
+      "name": "git-workflow",
+      "reason": "Streamlined git operations",
+      "plugin": "git-pr-workflows",
+      "priority": "high"
+    },
+    {
+      "name": "test-generate",
+      "reason": "Automated test generation",
+      "plugin": "unit-testing",
+      "priority": "medium"
+    },
+    {
+      "name": "doc-generate",
+      "reason": "Generate comprehensive documentation",
+      "plugin": "documentation-generation",
+      "priority": "medium"
+    },
+    {
+      "name": "refactor-clean",
+      "reason": "Code cleanup and refactoring",
+      "plugin": "code-refactoring",
+      "priority": "low"
+    }
+  ],
+  "skills": [
+    {
+      "name": "git-advanced-workflows",
+      "reason": "Essential git patterns and workflows",
+      "plugin": "developer-essentials",
+      "priority": "high"
+    },
+    {
+      "name": "debugging-strategies",
+      "reason": "Systematic debugging methodologies",
+      "plugin": "developer-essentials",
+      "priority": "high"
+    },
+    {
+      "name": "error-handling-patterns",
+      "reason": "Robust error handling across languages",
+      "plugin": "developer-essentials",
+      "priority": "high"
+    },
+    {
+      "name": "code-review-excellence",
+      "reason": "Code review best practices",
+      "plugin": "developer-essentials",
+      "priority": "medium"
+    },
+    {
+      "name": "e2e-testing-patterns",
+      "reason": "End-to-end testing strategies",
+      "plugin": "developer-essentials",
+      "priority": "medium"
+    },
+    {
+      "name": "auth-implementation-patterns",
+      "reason": "Authentication and authorization patterns",
+      "plugin": "developer-essentials",
+      "priority": "medium"
+    }
+  ],
+  "installation_steps": [
+    "1. Review each recommended artifact above",
+    "2. For agents: Copy .md files to betty/.claude/agents/",
+    "3. For commands: Copy .md files to betty/.claude/commands/",
+    "4. For skills: Copy skill directories to betty/.claude/skills/",
+    "5. Alternatively: Install entire plugins: /plugin install debugging-toolkit git-pr-workflows developer-essentials"
+  ],
+  "quick_install_plugins": [
+    "debugging-toolkit",
+    "git-pr-workflows",
+    "developer-essentials",
+    "code-documentation"
+  ]
+}

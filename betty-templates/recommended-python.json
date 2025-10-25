@@ -1,0 +1,126 @@
+{
+  "name": "Python Development Stack",
+  "description": "Complete Python development toolkit with modern tooling, async patterns, and web frameworks",
+  "recommended_for": "Python developers building backend services, APIs, or data applications",
+  "agents": [
+    {
+      "name": "python-pro",
+      "reason": "Python 3.12+ expert with uv, ruff, FastAPI, Django",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "fastapi-pro",
+      "reason": "FastAPI specialist for modern async APIs",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "django-pro",
+      "reason": "Django expert for full-stack web applications",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "backend-architect",
+      "reason": "API design and backend architecture",
+      "plugin": "backend-development",
+      "priority": "medium"
+    },
+    {
+      "name": "database-architect",
+      "reason": "Database schema design and optimization",
+      "plugin": "database-design",
+      "priority": "medium"
+    },
+    {
+      "name": "test-automator",
+      "reason": "Pytest and testing automation",
+      "plugin": "unit-testing",
+      "priority": "medium"
+    },
+    {
+      "name": "backend-security-coder",
+      "reason": "API security and authentication",
+      "plugin": "backend-api-security",
+      "priority": "medium"
+    }
+  ],
+  "commands": [
+    {
+      "name": "python-scaffold",
+      "reason": "Generate production-ready Python projects",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "feature-development",
+      "reason": "End-to-end feature development workflow",
+      "plugin": "backend-development",
+      "priority": "medium"
+    },
+    {
+      "name": "test-generate",
+      "reason": "Generate pytest tests automatically",
+      "plugin": "unit-testing",
+      "priority": "medium"
+    }
+  ],
+  "skills": [
+    {
+      "name": "async-python-patterns",
+      "reason": "AsyncIO, aiohttp, and concurrent programming",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "python-testing-patterns",
+      "reason": "Pytest fixtures, mocks, and test strategies",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "uv-package-manager",
+      "reason": "Fast modern Python package management",
+      "plugin": "python-development",
+      "priority": "high"
+    },
+    {
+      "name": "python-packaging",
+      "reason": "Building and distributing Python packages",
+      "plugin": "python-development",
+      "priority": "medium"
+    },
+    {
+      "name": "python-performance-optimization",
+      "reason": "Profiling and optimization techniques",
+      "plugin": "python-development",
+      "priority": "medium"
+    },
+    {
+      "name": "api-design-principles",
+      "reason": "REST and GraphQL API best practices",
+      "plugin": "backend-development",
+      "priority": "high"
+    },
+    {
+      "name": "fastapi-templates",
+      "reason": "Production FastAPI project templates",
+      "plugin": "api-scaffolding",
+      "priority": "medium"
+    },
+    {
+      "name": "sql-optimization-patterns",
+      "reason": "Database query optimization",
+      "plugin": "developer-essentials",
+      "priority": "medium"
+    }
+  ],
+  "quick_install_plugins": [
+    "python-development",
+    "backend-development",
+    "api-scaffolding",
+    "unit-testing",
+    "backend-api-security"
+  ]
+}
