@@ -1,0 +1,964 @@
+{
+  "total_count": 70,
+  "note": "Metadata only - use full files for content",
+  "commands": [
+    {
+      "name": "doc-generate",
+      "title": "Automated Documentation Generation",
+      "description": "You are a documentation expert specializing in creating comprehensive, maintainable documentation from code. Generate API docs, architecture diagrams, user guides, and technical references using AI-po",
+      "plugin": "code-documentation",
+      "category": "documentation",
+      "keywords": [
+        "documentation",
+        "code-explanation",
+        "technical-writing",
+        "tutorials"
+      ]
+    },
+    {
+      "name": "code-explain",
+      "title": "Code Explanation and Analysis",
+      "description": "You are a code education expert specializing in explaining complex code through clear narratives, visual diagrams, and step-by-step breakdowns. Transform difficult concepts into understandable explana",
+      "plugin": "code-documentation",
+      "category": "documentation",
+      "keywords": [
+        "documentation",
+        "code-explanation",
+        "technical-writing",
+        "tutorials"
+      ]
+    },
+    {
+      "name": "smart-debug",
+      "title": "smart-debug",
+      "description": "You are an expert AI-assisted debugging specialist with deep knowledge of modern debugging tools, observability platforms, and automated root cause analysis.",
+      "plugin": "debugging-toolkit",
+      "category": "development",
+      "keywords": [
+        "debugging",
+        "developer-experience",
+        "troubleshooting",
+        "essential"
+      ]
+    },
+    {
+      "name": "pr-enhance",
+      "title": "Pull Request Enhancement",
+      "description": "You are a PR optimization expert specializing in creating high-quality pull requests that facilitate efficient code reviews. Generate comprehensive PR descriptions, automate review processes, and ensu",
+      "plugin": "git-pr-workflows",
+      "category": "workflows",
+      "keywords": [
+        "git",
+        "pull-request",
+        "workflow",
+        "onboarding",
+        "essential"
+      ]
+    },
+    {
+      "name": "onboard",
+      "title": "Onboard",
+      "description": "You are an **expert onboarding specialist and knowledge transfer architect** with deep experience in remote-first organizations, technical team integration, and accelerated learning methodologies. You",
+      "plugin": "git-pr-workflows",
+      "category": "workflows",
+      "keywords": [
+        "git",
+        "pull-request",
+        "workflow",
+        "onboarding",
+        "essential"
+      ]
+    },
+    {
+      "name": "git-workflow",
+      "title": "Complete Git Workflow with Multi-Agent Orchestration",
+      "description": "Orchestrate a comprehensive git workflow from code review through PR creation, leveraging specialized agents for quality assurance, testing, and deployment readiness. This workflow implements modern g",
+      "plugin": "git-pr-workflows",
+      "category": "workflows",
+      "keywords": [
+        "git",
+        "pull-request",
+        "workflow",
+        "onboarding",
+        "essential"
+      ]
+    },
+    {
+      "name": "feature-development",
+      "title": "feature-development",
+      "description": "Orchestrate end-to-end feature development from requirements to production deployment:",
+      "plugin": "backend-development",
+      "category": "development",
+      "keywords": [
+        "backend",
+        "api-design",
+        "graphql",
+        "tdd",
+        "architecture"
+      ]
+    },
+    {
+      "name": "component-scaffold",
+      "title": "React/React Native Component Scaffolding",
+      "description": "You are a React component architecture expert specializing in scaffolding production-ready, accessible, and performant components. Generate complete component implementations with TypeScript, tests, s",
+      "plugin": "frontend-mobile-development",
+      "category": "development",
+      "keywords": [
+        "frontend",
+        "mobile",
+        "react",
+        "ui",
+        "cross-platform"
+      ]
+    },
+    {
+      "name": "full-stack-feature",
+      "title": "full-stack-feature",
+      "description": "Orchestrate full-stack feature development across backend, frontend, and infrastructure layers with modern API-first approach:",
+      "plugin": "full-stack-orchestration",
+      "category": "workflows",
+      "keywords": [
+        "full-stack",
+        "orchestration",
+        "deployment",
+        "security",
+        "testing"
+      ]
+    },
+    {
+      "name": "test-generate",
+      "title": "Automated Unit Test Generation",
+      "description": "You are a test automation expert specializing in generating comprehensive, maintainable unit tests across multiple languages and frameworks. Create tests that maximize coverage, catch edge cases, and ",
+      "plugin": "unit-testing",
+      "category": "testing",
+      "keywords": [
+        "testing",
+        "unit-tests",
+        "python",
+        "javascript",
+        "automation"
+      ]
+    },
+    {
+      "name": "tdd-cycle",
+      "title": "tdd-cycle",
+      "description": "Execute a comprehensive Test-Driven Development (TDD) workflow with strict red-green-refactor discipline:",
+      "plugin": "tdd-workflows",
+      "category": "workflows",
+      "keywords": [
+        "tdd",
+        "test-driven",
+        "workflow",
+        "red-green-refactor"
+      ]
+    },
+    {
+      "name": "tdd-red",
+      "title": "tdd-red",
+      "description": "Write comprehensive failing tests following TDD red phase principles.",
+      "plugin": "tdd-workflows",
+      "category": "workflows",
+      "keywords": [
+        "tdd",
+        "test-driven",
+        "workflow",
+        "red-green-refactor"
+      ]
+    },
+    {
+      "name": "tdd-green",
+      "title": "Green Phase: Simple function",
+      "description": "Implement minimal code to make failing tests pass in TDD green phase:",
+      "plugin": "tdd-workflows",
+      "category": "workflows",
+      "keywords": [
+        "tdd",
+        "test-driven",
+        "workflow",
+        "red-green-refactor"
+      ]
+    },
+    {
+      "name": "tdd-refactor",
+      "title": "tdd-refactor",
+      "description": "Refactor code with confidence using comprehensive test safety net:",
+      "plugin": "tdd-workflows",
+      "category": "workflows",
+      "keywords": [
+        "tdd",
+        "test-driven",
+        "workflow",
+        "red-green-refactor"
+      ]
+    },
+    {
+      "name": "ai-review",
+      "title": "AI-Powered Code Review Specialist",
+      "description": "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices. Leverage AI tools (GitHub Copilot, Qodo, GPT-4, C",
+      "plugin": "code-review-ai",
+      "category": "quality",
+      "keywords": [
+        "code-review",
+        "architecture",
+        "ai-analysis",
+        "quality"
+      ]
+    },
+    {
+      "name": "refactor-clean",
+      "title": "Refactor and Clean Code",
+      "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices. Analyze and refactor the provided code to improve its qu",
+      "plugin": "code-refactoring",
+      "category": "utilities",
+      "keywords": [
+        "refactoring",
+        "code-quality",
+        "technical-debt",
+        "cleanup"
+      ]
+    },
+    {
+      "name": "tech-debt",
+      "title": "Technical Debt Analysis and Remediation",
+      "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
+      "plugin": "code-refactoring",
+      "category": "utilities",
+      "keywords": [
+        "refactoring",
+        "code-quality",
+        "technical-debt",
+        "cleanup"
+      ]
+    },
+    {
+      "name": "context-restore",
+      "title": "Context Restoration: Advanced Semantic Memory Rehydration",
+      "description": "Expert Context Restoration Specialist focused on intelligent, semantic-aware context retrieval and reconstruction across complex multi-agent AI workflows. Specializes in preserving and reconstructing ",
+      "plugin": "code-refactoring",
+      "category": "utilities",
+      "keywords": [
+        "refactoring",
+        "code-quality",
+        "technical-debt",
+        "cleanup"
+      ]
+    },
+    {
+      "name": "deps-audit",
+      "title": "Dependency Audit and Security Analysis",
+      "description": "You are a dependency security expert specializing in vulnerability scanning, license compliance, and supply chain security. Analyze project dependencies for known vulnerabilities, licensing issues, ou",
+      "plugin": "dependency-management",
+      "category": "utilities",
+      "keywords": [
+        "dependencies",
+        "npm",
+        "security",
+        "auditing",
+        "upgrades"
+      ]
+    },
+    {
+      "name": "error-analysis",
+      "title": "Error Analysis and Resolution",
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "plugin": "error-debugging",
+      "category": "utilities",
+      "keywords": [
+        "error-handling",
+        "debugging",
+        "diagnostics",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "error-trace",
+      "title": "Error Tracking and Monitoring",
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
+      "plugin": "error-debugging",
+      "category": "utilities",
+      "keywords": [
+        "error-handling",
+        "debugging",
+        "diagnostics",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "multi-agent-review",
+      "title": "Multi-Agent Code Review Orchestration Tool",
+      "description": "A sophisticated AI-powered code review system designed to provide comprehensive, multi-perspective analysis of software artifacts through intelligent agent coordination and specialized domain expertis",
+      "plugin": "error-debugging",
+      "category": "utilities",
+      "keywords": [
+        "error-handling",
+        "debugging",
+        "diagnostics",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "issue",
+      "title": "GitHub Issue Resolution Expert",
+      "description": "You are a GitHub issue resolution expert specializing in systematic bug investigation, feature implementation, and collaborative development workflows. Your expertise spans issue triage, root cause an",
+      "plugin": "team-collaboration",
+      "category": "utilities",
+      "keywords": [
+        "collaboration",
+        "team",
+        "standup",
+        "issue-management"
+      ]
+    },
+    {
+      "name": "standup-notes",
+      "title": "Standup Notes Generator",
+      "description": "You are an expert team communication specialist focused on async-first standup practices, AI-assisted note generation from commit history, and effective remote team coordination patterns.",
+      "plugin": "team-collaboration",
+      "category": "utilities",
+      "keywords": [
+        "collaboration",
+        "team",
+        "standup",
+        "issue-management"
+      ]
+    },
+    {
+      "name": "langchain-agent",
+      "title": "LangChain/LangGraph Agent Development Expert",
+      "description": "You are an expert LangChain agent developer specializing in production-grade AI systems using LangChain 0.1+ and LangGraph.",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ]
+    },
+    {
+      "name": "ai-assistant",
+      "title": "AI Assistant Development",
+      "description": "You are an AI assistant development expert specializing in creating intelligent conversational interfaces, chatbots, and AI-powered applications. Design comprehensive AI assistant solutions with natur",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ]
+    },
+    {
+      "name": "prompt-optimize",
+      "title": "Prompt Optimization",
+      "description": "You are an expert prompt engineer specializing in crafting effective prompts for LLMs through advanced techniques including constitutional AI, chain-of-thought reasoning, and model-specific optimizati",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ]
+    },
+    {
+      "name": "multi-agent-optimize",
+      "title": "Multi-Agent Optimization Toolkit",
+      "description": "The Multi-Agent Optimization Tool is an advanced AI-driven framework designed to holistically improve system performance through intelligent, coordinated agent-based optimization. Leveraging cutting-e",
+      "plugin": "agent-orchestration",
+      "category": "ai-ml",
+      "keywords": [
+        "multi-agent",
+        "orchestration",
+        "ai-agents",
+        "optimization"
+      ]
+    },
+    {
+      "name": "improve-agent",
+      "title": "Agent Performance Optimization Workflow",
+      "description": "Systematic improvement of existing agents through performance analysis, prompt engineering, and continuous iteration.",
+      "plugin": "agent-orchestration",
+      "category": "ai-ml",
+      "keywords": [
+        "multi-agent",
+        "orchestration",
+        "ai-agents",
+        "optimization"
+      ]
+    },
+    {
+      "name": "context-save",
+      "title": "Context Save Tool: Intelligent Context Management Specialist",
+      "description": "An elite context engineering specialist focused on comprehensive, semantic, and dynamically adaptable context preservation across AI workflows. This tool orchestrates advanced context capture, seriali",
+      "plugin": "context-management",
+      "category": "ai-ml",
+      "keywords": [
+        "context",
+        "persistence",
+        "conversation",
+        "memory"
+      ]
+    },
+    {
+      "name": "context-restore",
+      "title": "Context Restoration: Advanced Semantic Memory Rehydration",
+      "description": "Expert Context Restoration Specialist focused on intelligent, semantic-aware context retrieval and reconstruction across complex multi-agent AI workflows. Specializes in preserving and reconstructing ",
+      "plugin": "context-management",
+      "category": "ai-ml",
+      "keywords": [
+        "context",
+        "persistence",
+        "conversation",
+        "memory"
+      ]
+    },
+    {
+      "name": "ml-pipeline",
+      "title": "Machine Learning Pipeline - Multi-Agent MLOps Orchestration",
+      "description": "Design and implement a complete ML pipeline for: $ARGUMENTS",
+      "plugin": "machine-learning-ops",
+      "category": "ai-ml",
+      "keywords": [
+        "machine-learning",
+        "mlops",
+        "model-training",
+        "tensorflow",
+        "pytorch",
+        "mlflow"
+      ]
+    },
+    {
+      "name": "data-driven-feature",
+      "title": "Data-Driven Feature Development",
+      "description": "Build features guided by data insights, A/B testing, and continuous measurement using specialized agents for analysis, implementation, and experimentation.",
+      "plugin": "data-engineering",
+      "category": "data",
+      "keywords": [
+        "data-engineering",
+        "etl",
+        "data-pipeline",
+        "data-warehouse",
+        "batch-processing"
+      ]
+    },
+    {
+      "name": "data-pipeline",
+      "title": "Data Pipeline Architecture",
+      "description": "You are a data pipeline architecture expert specializing in scalable, reliable, and cost-effective data pipelines for batch and streaming data processing.",
+      "plugin": "data-engineering",
+      "category": "data",
+      "keywords": [
+        "data-engineering",
+        "etl",
+        "data-pipeline",
+        "data-warehouse",
+        "batch-processing"
+      ]
+    },
+    {
+      "name": "incident-response",
+      "title": "incident-response",
+      "description": "Orchestrate multi-agent incident response with modern SRE practices for rapid resolution and learning:",
+      "plugin": "incident-response",
+      "category": "operations",
+      "keywords": [
+        "incident-response",
+        "production",
+        "sre",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "smart-fix",
+      "title": "Intelligent Issue Resolution with Multi-Agent Orchestration",
+      "description": "[Extended thinking: This workflow implements a sophisticated debugging and resolution pipeline that leverages AI-assisted debugging tools and observability platforms to systematically diagnose and res",
+      "plugin": "incident-response",
+      "category": "operations",
+      "keywords": [
+        "incident-response",
+        "production",
+        "sre",
+        "troubleshooting"
+      ]
+    },
+    {
+      "name": "error-trace",
+      "title": "Error Tracking and Monitoring",
+      "description": "You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, configure alerts, implement structured logging,",
+      "plugin": "error-diagnostics",
+      "category": "operations",
+      "keywords": [
+        "diagnostics",
+        "error-tracing",
+        "root-cause",
+        "debugging"
+      ]
+    },
+    {
+      "name": "error-analysis",
+      "title": "Error Analysis and Resolution",
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehensive observability solutions.",
+      "plugin": "error-diagnostics",
+      "category": "operations",
+      "keywords": [
+        "diagnostics",
+        "error-tracing",
+        "root-cause",
+        "debugging"
+      ]
+    },
+    {
+      "name": "smart-debug",
+      "title": "smart-debug",
+      "description": "You are an expert AI-assisted debugging specialist with deep knowledge of modern debugging tools, observability platforms, and automated root cause analysis.",
+      "plugin": "error-diagnostics",
+      "category": "operations",
+      "keywords": [
+        "diagnostics",
+        "error-tracing",
+        "root-cause",
+        "debugging"
+      ]
+    },
+    {
+      "name": "debug-trace",
+      "title": "Debug and Trace Configuration",
+      "description": "You are a debugging expert specializing in setting up comprehensive debugging environments, distributed tracing, and diagnostic tools. Configure debugging workflows, implement tracing solutions, and e",
+      "plugin": "distributed-debugging",
+      "category": "operations",
+      "keywords": [
+        "distributed-tracing",
+        "microservices",
+        "debugging",
+        "observability"
+      ]
+    },
+    {
+      "name": "monitor-setup",
+      "title": "Monitoring and Observability Setup",
+      "description": "You are a monitoring and observability expert specializing in implementing comprehensive monitoring solutions. Set up metrics collection, distributed tracing, log aggregation, and create insightful da",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ]
+    },
+    {
+      "name": "slo-implement",
+      "title": "SLO Implementation Guide",
+      "description": "You are an SLO (Service Level Objective) expert specializing in implementing reliability standards and error budget-based engineering practices. Design comprehensive SLO frameworks, establish meaningf",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ]
+    },
+    {
+      "name": "config-validate",
+      "title": "Configuration Validation",
+      "description": "You are a configuration management expert specializing in validating, testing, and ensuring the correctness of application configurations. Create comprehensive validation schemas, implement configurat",
+      "plugin": "deployment-validation",
+      "category": "infrastructure",
+      "keywords": [
+        "validation",
+        "pre-flight",
+        "configuration",
+        "deployment-safety"
+      ]
+    },
+    {
+      "name": "workflow-automate",
+      "title": "Workflow Automation",
+      "description": "You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Design and implement automation that reduces man",
+      "plugin": "cicd-automation",
+      "category": "infrastructure",
+      "keywords": [
+        "ci-cd",
+        "automation",
+        "pipeline",
+        "github-actions",
+        "gitlab-ci"
+      ]
+    },
+    {
+      "name": "performance-optimization",
+      "title": "performance-optimization",
+      "description": "Optimize application performance end-to-end using specialized performance and optimization agents:",
+      "plugin": "application-performance",
+      "category": "performance",
+      "keywords": [
+        "performance",
+        "profiling",
+        "optimization",
+        "core-web-vitals"
+      ]
+    },
+    {
+      "name": "cost-optimize",
+      "title": "Cloud Cost Optimization",
+      "description": "You are a cloud cost optimization expert specializing in reducing infrastructure expenses while maintaining performance and reliability. Analyze cloud spending, identify savings opportunities, and imp",
+      "plugin": "database-cloud-optimization",
+      "category": "performance",
+      "keywords": [
+        "database-optimization",
+        "cloud-cost",
+        "query-tuning",
+        "scalability"
+      ]
+    },
+    {
+      "name": "full-review",
+      "title": "full-review",
+      "description": "Orchestrate comprehensive multi-dimensional code review using specialized review agents",
+      "plugin": "comprehensive-review",
+      "category": "quality",
+      "keywords": [
+        "code-review",
+        "quality",
+        "architecture",
+        "security",
+        "best-practices"
+      ]
+    },
+    {
+      "name": "pr-enhance",
+      "title": "Pull Request Enhancement",
+      "description": "You are a PR optimization expert specializing in creating high-quality pull requests that facilitate efficient code reviews. Generate comprehensive PR descriptions, automate review processes, and ensu",
+      "plugin": "comprehensive-review",
+      "category": "quality",
+      "keywords": [
+        "code-review",
+        "quality",
+        "architecture",
+        "security",
+        "best-practices"
+      ]
+    },
+    {
+      "name": "ai-review",
+      "title": "AI-Powered Code Review Specialist",
+      "description": "You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices. Leverage AI tools (GitHub Copilot, Qodo, GPT-4, C",
+      "plugin": "performance-testing-review",
+      "category": "quality",
+      "keywords": [
+        "performance-review",
+        "test-coverage",
+        "quality-analysis"
+      ]
+    },
+    {
+      "name": "multi-agent-review",
+      "title": "Multi-Agent Code Review Orchestration Tool",
+      "description": "A sophisticated AI-powered code review system designed to provide comprehensive, multi-perspective analysis of software artifacts through intelligent agent coordination and specialized domain expertis",
+      "plugin": "performance-testing-review",
+      "category": "quality",
+      "keywords": [
+        "performance-review",
+        "test-coverage",
+        "quality-analysis"
+      ]
+    },
+    {
+      "name": "legacy-modernize",
+      "title": "Legacy Code Modernization Workflow",
+      "description": "Orchestrate a comprehensive legacy system modernization using the strangler fig pattern, enabling gradual replacement of outdated components while maintaining continuous business operations through ex",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ]
+    },
+    {
+      "name": "code-migrate",
+      "title": "Code Migration Assistant",
+      "description": "You are a code migration expert specializing in transitioning codebases between frameworks, languages, versions, and platforms. Generate comprehensive migration plans, automated migration scripts, and",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ]
+    },
+    {
+      "name": "deps-upgrade",
+      "title": "Dependency Upgrade Strategy",
+      "description": "You are a dependency management expert specializing in safe, incremental upgrades of project dependencies. Plan and execute dependency updates with minimal risk, proper testing, and clear migration pa",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ]
+    },
+    {
+      "name": "deps-audit",
+      "title": "Dependency Audit and Security Analysis",
+      "description": "You are a dependency security expert specializing in vulnerability scanning, license compliance, and supply chain security. Analyze project dependencies for known vulnerabilities, licensing issues, ou",
+      "plugin": "codebase-cleanup",
+      "category": "modernization",
+      "keywords": [
+        "technical-debt",
+        "cleanup",
+        "refactoring",
+        "dependencies"
+      ]
+    },
+    {
+      "name": "tech-debt",
+      "title": "Technical Debt Analysis and Remediation",
+      "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical debt in software projects. Analyze the codebase to uncover debt, assess its impact, and create acti",
+      "plugin": "codebase-cleanup",
+      "category": "modernization",
+      "keywords": [
+        "technical-debt",
+        "cleanup",
+        "refactoring",
+        "dependencies"
+      ]
+    },
+    {
+      "name": "refactor-clean",
+      "title": "Refactor and Clean Code",
+      "description": "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices. Analyze and refactor the provided code to improve its qu",
+      "plugin": "codebase-cleanup",
+      "category": "modernization",
+      "keywords": [
+        "technical-debt",
+        "cleanup",
+        "refactoring",
+        "dependencies"
+      ]
+    },
+    {
+      "name": "sql-migrations",
+      "title": "SQL Database Migration Strategy and Implementation",
+      "description": "---",
+      "plugin": "database-migrations",
+      "category": "database",
+      "keywords": [
+        "migrations",
+        "database-operations",
+        "postgres",
+        "mysql",
+        "mongodb"
+      ]
+    },
+    {
+      "name": "migration-observability",
+      "title": "Migration Observability and Real-time Monitoring",
+      "description": "---",
+      "plugin": "database-migrations",
+      "category": "database",
+      "keywords": [
+        "migrations",
+        "database-operations",
+        "postgres",
+        "mysql",
+        "mongodb"
+      ]
+    },
+    {
+      "name": "security-hardening",
+      "title": "security-hardening",
+      "description": "Implement comprehensive security hardening with defense-in-depth strategy through coordinated multi-agent orchestration:",
+      "plugin": "security-scanning",
+      "category": "security",
+      "keywords": [
+        "security",
+        "sast",
+        "vulnerability-scanning",
+        "owasp",
+        "devsecops"
+      ]
+    },
+    {
+      "name": "security-sast",
+      "title": "SAST Security Plugin",
+      "description": "---",
+      "plugin": "security-scanning",
+      "category": "security",
+      "keywords": [
+        "security",
+        "sast",
+        "vulnerability-scanning",
+        "owasp",
+        "devsecops"
+      ]
+    },
+    {
+      "name": "security-dependencies",
+      "title": "Dependency Vulnerability Scanning",
+      "description": "You are a security expert specializing in dependency vulnerability analysis, SBOM generation, and supply chain security. Scan project dependencies across multiple ecosystems to identify vulnerabilitie",
+      "plugin": "security-scanning",
+      "category": "security",
+      "keywords": [
+        "security",
+        "sast",
+        "vulnerability-scanning",
+        "owasp",
+        "devsecops"
+      ]
+    },
+    {
+      "name": "compliance-check",
+      "title": "Regulatory Compliance Check",
+      "description": "You are a compliance expert specializing in regulatory requirements for software systems including GDPR, HIPAA, SOC2, PCI-DSS, and other industry standards. Perform comprehensive compliance audits and",
+      "plugin": "security-compliance",
+      "category": "security",
+      "keywords": [
+        "compliance",
+        "soc2",
+        "hipaa",
+        "gdpr",
+        "secrets",
+        "regulatory"
+      ]
+    },
+    {
+      "name": "xss-scan",
+      "title": "XSS Vulnerability Scanner for Frontend Code",
+      "description": "You are a frontend security specialist focusing on Cross-Site Scripting (XSS) vulnerability detection and prevention. Analyze React, Vue, Angular, and vanilla JavaScript code to identify injection poi",
+      "plugin": "frontend-mobile-security",
+      "category": "security",
+      "keywords": [
+        "frontend-security",
+        "mobile-security",
+        "xss",
+        "csrf",
+        "csp"
+      ]
+    },
+    {
+      "name": "api-mock",
+      "title": "API Mocking Framework",
+      "description": "You are an API mocking expert specializing in creating realistic mock services for development, testing, and demonstration purposes. Design comprehensive mocking solutions that simulate real API behav",
+      "plugin": "api-testing-observability",
+      "category": "api",
+      "keywords": [
+        "api-testing",
+        "mocking",
+        "openapi",
+        "swagger",
+        "observability"
+      ]
+    },
+    {
+      "name": "doc-generate",
+      "title": "Automated Documentation Generation",
+      "description": "You are a documentation expert specializing in creating comprehensive, maintainable documentation from code. Generate API docs, architecture diagrams, user guides, and technical references using AI-po",
+      "plugin": "documentation-generation",
+      "category": "documentation",
+      "keywords": [
+        "documentation",
+        "api-docs",
+        "diagrams",
+        "openapi",
+        "swagger",
+        "mermaid"
+      ]
+    },
+    {
+      "name": "multi-platform",
+      "title": "Multi-Platform Feature Development Workflow",
+      "description": "Build and deploy the same feature consistently across web, mobile, and desktop platforms using API-first architecture and parallel implementation strategies.",
+      "plugin": "multi-platform-apps",
+      "category": "development",
+      "keywords": [
+        "cross-platform",
+        "mobile",
+        "web",
+        "desktop",
+        "react-native",
+        "flutter"
+      ]
+    },
+    {
+      "name": "accessibility-audit",
+      "title": "Accessibility Audit and Testing",
+      "description": "You are an accessibility expert specializing in WCAG compliance, inclusive design, and assistive technology compatibility. Conduct comprehensive audits, identify barriers, provide remediation guidance",
+      "plugin": "accessibility-compliance",
+      "category": "accessibility",
+      "keywords": [
+        "accessibility",
+        "wcag",
+        "a11y",
+        "compliance",
+        "inclusive-design"
+      ]
+    },
+    {
+      "name": "python-scaffold",
+      "title": "Python Project Scaffolding",
+      "description": "You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with modern tooling (uv, FastAPI, Django), type hint",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ]
+    },
+    {
+      "name": "typescript-scaffold",
+      "title": "TypeScript Project Scaffolding",
+      "description": "You are a TypeScript project architecture expert specializing in scaffolding production-ready Node.js and frontend applications. Generate complete project structures with modern tooling (pnpm, Vite, N",
+      "plugin": "javascript-typescript",
+      "category": "languages",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "es6",
+        "nodejs",
+        "react"
+      ]
+    },
+    {
+      "name": "rust-project",
+      "title": "Rust Project Scaffolding",
+      "description": "You are a Rust project architecture expert specializing in scaffolding production-ready Rust applications. Generate complete project structures with cargo tooling, proper module organization, testing ",
+      "plugin": "systems-programming",
+      "category": "languages",
+      "keywords": [
+        "rust",
+        "golang",
+        "c",
+        "cpp",
+        "systems-programming",
+        "performance"
+      ]
+    }
+  ]
+}

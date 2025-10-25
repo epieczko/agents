@@ -1,0 +1,952 @@
+{
+  "total_count": 58,
+  "note": "Metadata only - use full files for content",
+  "skills": [
+    {
+      "name": "api-design-principles",
+      "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.",
+      "plugin": "backend-development",
+      "category": "development",
+      "keywords": [
+        "backend",
+        "api-design",
+        "graphql",
+        "tdd",
+        "architecture"
+      ],
+      "has_references": true,
+      "has_assets": true
+    },
+    {
+      "name": "architecture-patterns",
+      "description": "Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use when architecting complex backend systems or refactoring existing applications for better maintainability.",
+      "plugin": "backend-development",
+      "category": "development",
+      "keywords": [
+        "backend",
+        "api-design",
+        "graphql",
+        "tdd",
+        "architecture"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "microservices-patterns",
+      "description": "Design microservices architectures with service boundaries, event-driven communication, and resilience patterns. Use when building distributed systems, decomposing monoliths, or implementing microservices.",
+      "plugin": "backend-development",
+      "category": "development",
+      "keywords": [
+        "backend",
+        "api-design",
+        "graphql",
+        "tdd",
+        "architecture"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "langchain-architecture",
+      "description": "Design LLM applications using the LangChain framework with agents, memory, and tool integration patterns. Use when building LangChain applications, implementing AI agents, or creating complex LLM workflows.",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "llm-evaluation",
+      "description": "Implement comprehensive evaluation strategies for LLM applications using automated metrics, human feedback, and benchmarking. Use when testing LLM performance, measuring AI application quality, or establishing evaluation frameworks.",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "prompt-engineering-patterns",
+      "description": "Master advanced prompt engineering techniques to maximize LLM performance, reliability, and controllability in production. Use when optimizing prompts, improving LLM outputs, or designing production prompt templates.",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ],
+      "has_references": true,
+      "has_assets": true
+    },
+    {
+      "name": "rag-implementation",
+      "description": "Build Retrieval-Augmented Generation (RAG) systems for LLM applications with vector databases and semantic search. Use when implementing knowledge-grounded AI, building document Q&A systems, or integrating LLMs with external knowledge bases.",
+      "plugin": "llm-application-dev",
+      "category": "ai-ml",
+      "keywords": [
+        "llm",
+        "ai",
+        "prompt-engineering",
+        "langchain",
+        "gpt",
+        "claude"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "ml-pipeline-workflow",
+      "description": "Build end-to-end MLOps pipelines from data preparation through model training, validation, and production deployment. Use when creating ML pipelines, implementing MLOps practices, or automating model training and deployment workflows.",
+      "plugin": "machine-learning-ops",
+      "category": "ai-ml",
+      "keywords": [
+        "machine-learning",
+        "mlops",
+        "model-training",
+        "tensorflow",
+        "pytorch",
+        "mlflow"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "distributed-tracing",
+      "description": "Implement distributed tracing with Jaeger and Tempo to track requests across microservices and identify performance bottlenecks. Use when debugging microservices, analyzing request flows, or implementing observability for distributed systems.",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "grafana-dashboards",
+      "description": "Create and manage production Grafana dashboards for real-time visualization of system and application metrics. Use when building monitoring dashboards, visualizing metrics, or creating operational observability interfaces.",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "prometheus-configuration",
+      "description": "Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastructure and applications. Use when implementing metrics collection, setting up monitoring infrastructure, or configuring alerting systems.",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "slo-implementation",
+      "description": "Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting. Use when establishing reliability targets, implementing SRE practices, or measuring service performance.",
+      "plugin": "observability-monitoring",
+      "category": "operations",
+      "keywords": [
+        "observability",
+        "monitoring",
+        "metrics",
+        "logging",
+        "tracing",
+        "slo",
+        "prometheus",
+        "grafana"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gitops-workflow",
+      "description": "Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous reconciliation. Use when implementing GitOps practices, automating Kubernetes deployments, or setting up declarative infrastructure management.",
+      "plugin": "kubernetes-operations",
+      "category": "infrastructure",
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "containers",
+        "helm",
+        "argocd",
+        "gitops"
+      ],
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "name": "helm-chart-scaffolding",
+      "description": "Design, organize, and manage Helm charts for templating and packaging Kubernetes applications with reusable configurations. Use when creating Helm charts, packaging Kubernetes applications, or implementing templated deployments.",
+      "plugin": "kubernetes-operations",
+      "category": "infrastructure",
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "containers",
+        "helm",
+        "argocd",
+        "gitops"
+      ],
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "name": "k8s-manifest-generator",
+      "description": "Create production-ready Kubernetes manifests for Deployments, Services, ConfigMaps, and Secrets following best practices and security standards. Use when generating Kubernetes YAML manifests, creating K8s resources, or implementing production-grade Kubernetes configurations.",
+      "plugin": "kubernetes-operations",
+      "category": "infrastructure",
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "containers",
+        "helm",
+        "argocd",
+        "gitops"
+      ],
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "name": "k8s-security-policies",
+      "description": "Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing Kubernetes clusters, implementing network isolation, or enforcing pod security standards.",
+      "plugin": "kubernetes-operations",
+      "category": "infrastructure",
+      "keywords": [
+        "kubernetes",
+        "k8s",
+        "containers",
+        "helm",
+        "argocd",
+        "gitops"
+      ],
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "name": "cost-optimization",
+      "description": "Optimize cloud costs through resource rightsizing, tagging strategies, reserved instances, and spending analysis. Use when reducing cloud expenses, analyzing infrastructure costs, or implementing cost governance policies.",
+      "plugin": "cloud-infrastructure",
+      "category": "infrastructure",
+      "keywords": [
+        "cloud",
+        "aws",
+        "azure",
+        "gcp",
+        "kubernetes",
+        "terraform",
+        "infrastructure"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "hybrid-cloud-networking",
+      "description": "Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms using VPN and dedicated connections. Use when building hybrid cloud architectures, connecting data centers to cloud, or implementing secure cross-premises networking.",
+      "plugin": "cloud-infrastructure",
+      "category": "infrastructure",
+      "keywords": [
+        "cloud",
+        "aws",
+        "azure",
+        "gcp",
+        "kubernetes",
+        "terraform",
+        "infrastructure"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "multi-cloud-architecture",
+      "description": "Design multi-cloud architectures using a decision framework to select and integrate services across AWS, Azure, and GCP. Use when building multi-cloud systems, avoiding vendor lock-in, or leveraging best-of-breed services from multiple providers.",
+      "plugin": "cloud-infrastructure",
+      "category": "infrastructure",
+      "keywords": [
+        "cloud",
+        "aws",
+        "azure",
+        "gcp",
+        "kubernetes",
+        "terraform",
+        "infrastructure"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "terraform-module-library",
+      "description": "Build reusable Terraform modules for AWS, Azure, and GCP infrastructure following infrastructure-as-code best practices. Use when creating infrastructure modules, standardizing cloud provisioning, or implementing reusable IaC components.",
+      "plugin": "cloud-infrastructure",
+      "category": "infrastructure",
+      "keywords": [
+        "cloud",
+        "aws",
+        "azure",
+        "gcp",
+        "kubernetes",
+        "terraform",
+        "infrastructure"
+      ],
+      "has_references": true,
+      "has_assets": false
+    },
+    {
+      "name": "deployment-pipeline-design",
+      "description": "Design multi-stage CI/CD pipelines with approval gates, security checks, and deployment orchestration. Use when architecting deployment workflows, setting up continuous delivery, or implementing GitOps practices.",
+      "plugin": "cicd-automation",
+      "category": "infrastructure",
+      "keywords": [
+        "ci-cd",
+        "automation",
+        "pipeline",
+        "github-actions",
+        "gitlab-ci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "github-actions-templates",
+      "description": "Create production-ready GitHub Actions workflows for automated testing, building, and deploying applications. Use when setting up CI/CD with GitHub Actions, automating development workflows, or creating reusable workflow templates.",
+      "plugin": "cicd-automation",
+      "category": "infrastructure",
+      "keywords": [
+        "ci-cd",
+        "automation",
+        "pipeline",
+        "github-actions",
+        "gitlab-ci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "gitlab-ci-patterns",
+      "description": "Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distributed runners for scalable automation. Use when implementing GitLab CI/CD, optimizing pipeline performance, or setting up automated testing and deployment.",
+      "plugin": "cicd-automation",
+      "category": "infrastructure",
+      "keywords": [
+        "ci-cd",
+        "automation",
+        "pipeline",
+        "github-actions",
+        "gitlab-ci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "secrets-management",
+      "description": "Implement secure secrets management for CI/CD pipelines using Vault, AWS Secrets Manager, or native platform solutions. Use when handling sensitive credentials, rotating secrets, or securing CI/CD environments.",
+      "plugin": "cicd-automation",
+      "category": "infrastructure",
+      "keywords": [
+        "ci-cd",
+        "automation",
+        "pipeline",
+        "github-actions",
+        "gitlab-ci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "angular-migration",
+      "description": "Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and dependency injection updates. Use when upgrading AngularJS applications, planning framework migrations, or modernizing legacy Angular code.",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "database-migration",
+      "description": "Execute database migrations across ORMs and platforms with zero-downtime strategies, data transformation, and rollback procedures. Use when migrating databases, changing schemas, performing data transformations, or implementing zero-downtime deployment strategies.",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "dependency-upgrade",
+      "description": "Manage major dependency version upgrades with compatibility analysis, staged rollout, and comprehensive testing. Use when upgrading framework versions, updating major dependencies, or managing breaking changes in libraries.",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "react-modernization",
+      "description": "Upgrade React applications to latest versions, migrate from class components to hooks, and adopt concurrent features. Use when modernizing React codebases, migrating to React Hooks, or upgrading to latest React versions.",
+      "plugin": "framework-migration",
+      "category": "modernization",
+      "keywords": [
+        "migration",
+        "framework-upgrade",
+        "modernization",
+        "angular",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sast-configuration",
+      "description": "Configure Static Application Security Testing (SAST) tools for automated vulnerability detection in application code. Use when setting up security scanning, implementing DevSecOps practices, or automating code vulnerability detection.",
+      "plugin": "security-scanning",
+      "category": "security",
+      "keywords": [
+        "security",
+        "sast",
+        "vulnerability-scanning",
+        "owasp",
+        "devsecops"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "fastapi-templates",
+      "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
+      "plugin": "api-scaffolding",
+      "category": "api",
+      "keywords": [
+        "api",
+        "rest",
+        "graphql",
+        "fastapi",
+        "django",
+        "express"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "defi-protocol-templates",
+      "description": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems. Use when building decentralized finance applications or smart contract protocols.",
+      "plugin": "blockchain-web3",
+      "category": "blockchain",
+      "keywords": [
+        "blockchain",
+        "web3",
+        "solidity",
+        "ethereum",
+        "defi",
+        "nft",
+        "smart-contracts"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nft-standards",
+      "description": "Implement NFT standards (ERC-721, ERC-1155) with proper metadata handling, minting strategies, and marketplace integration. Use when creating NFT contracts, building NFT marketplaces, or implementing digital asset systems.",
+      "plugin": "blockchain-web3",
+      "category": "blockchain",
+      "keywords": [
+        "blockchain",
+        "web3",
+        "solidity",
+        "ethereum",
+        "defi",
+        "nft",
+        "smart-contracts"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "solidity-security",
+      "description": "Master smart contract security best practices to prevent common vulnerabilities and implement secure Solidity patterns. Use when writing smart contracts, auditing existing contracts, or implementing security measures for blockchain applications.",
+      "plugin": "blockchain-web3",
+      "category": "blockchain",
+      "keywords": [
+        "blockchain",
+        "web3",
+        "solidity",
+        "ethereum",
+        "defi",
+        "nft",
+        "smart-contracts"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "web3-testing",
+      "description": "Test smart contracts comprehensively using Hardhat and Foundry with unit tests, integration tests, and mainnet forking. Use when testing Solidity contracts, setting up blockchain test suites, or validating DeFi protocols.",
+      "plugin": "blockchain-web3",
+      "category": "blockchain",
+      "keywords": [
+        "blockchain",
+        "web3",
+        "solidity",
+        "ethereum",
+        "defi",
+        "nft",
+        "smart-contracts"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "billing-automation",
+      "description": "Build automated billing systems for recurring payments, invoicing, subscription lifecycle, and dunning management. Use when implementing subscription billing, automating invoicing, or managing recurring payment systems.",
+      "plugin": "payment-processing",
+      "category": "payments",
+      "keywords": [
+        "payments",
+        "stripe",
+        "paypal",
+        "checkout",
+        "billing",
+        "subscriptions",
+        "pci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "paypal-integration",
+      "description": "Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management. Use when implementing PayPal payments, processing online transactions, or building e-commerce checkout flows.",
+      "plugin": "payment-processing",
+      "category": "payments",
+      "keywords": [
+        "payments",
+        "stripe",
+        "paypal",
+        "checkout",
+        "billing",
+        "subscriptions",
+        "pci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "pci-compliance",
+      "description": "Implement PCI DSS compliance requirements for secure handling of payment card data and payment systems. Use when securing payment processing, achieving PCI compliance, or implementing payment card security measures.",
+      "plugin": "payment-processing",
+      "category": "payments",
+      "keywords": [
+        "payments",
+        "stripe",
+        "paypal",
+        "checkout",
+        "billing",
+        "subscriptions",
+        "pci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "stripe-integration",
+      "description": "Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscription systems, or implementing secure checkout flows.",
+      "plugin": "payment-processing",
+      "category": "payments",
+      "keywords": [
+        "payments",
+        "stripe",
+        "paypal",
+        "checkout",
+        "billing",
+        "subscriptions",
+        "pci"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "async-python-patterns",
+      "description": "Master Python asyncio, concurrent programming, and async/await patterns for high-performance applications. Use when building async APIs, concurrent systems, or I/O-bound applications requiring non-blocking operations.",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "python-testing-patterns",
+      "description": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "python-packaging",
+      "description": "Create distributable Python packages with proper project structure, setup.py/pyproject.toml, and publishing to PyPI. Use when packaging Python libraries, creating CLI tools, or distributing Python code.",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "python-performance-optimization",
+      "description": "Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottlenecks, or improving application performance.",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "uv-package-manager",
+      "description": "Master the uv package manager for fast Python dependency management, virtual environments, and modern Python project workflows. Use when setting up Python projects, managing dependencies, or optimizing Python development workflows with uv.",
+      "plugin": "python-development",
+      "category": "languages",
+      "keywords": [
+        "python",
+        "django",
+        "fastapi",
+        "async",
+        "backend"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "typescript-advanced-types",
+      "description": "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating reusable type utilities, or ensuring compile-time type safety in TypeScript projects.",
+      "plugin": "javascript-typescript",
+      "category": "languages",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "es6",
+        "nodejs",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "nodejs-backend-patterns",
+      "description": "Build production-ready Node.js backend services with Express/Fastify, implementing middleware patterns, error handling, authentication, database integration, and API design best practices. Use when creating Node.js servers, REST APIs, GraphQL backends, or microservices architectures.",
+      "plugin": "javascript-typescript",
+      "category": "languages",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "es6",
+        "nodejs",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "javascript-testing-patterns",
+      "description": "Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.",
+      "plugin": "javascript-typescript",
+      "category": "languages",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "es6",
+        "nodejs",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "modern-javascript-patterns",
+      "description": "Master ES6+ features including async/await, destructuring, spread operators, arrow functions, promises, modules, iterators, generators, and functional programming patterns for writing clean, efficient JavaScript code. Use when refactoring legacy code, implementing modern patterns, or optimizing JavaScript applications.",
+      "plugin": "javascript-typescript",
+      "category": "languages",
+      "keywords": [
+        "javascript",
+        "typescript",
+        "es6",
+        "nodejs",
+        "react"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "bash-defensive-patterns",
+      "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
+      "plugin": "shell-scripting",
+      "category": "languages",
+      "keywords": [
+        "bash",
+        "shell",
+        "scripting",
+        "automation",
+        "posix",
+        "shellcheck",
+        "testing"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "shellcheck-configuration",
+      "description": "Master ShellCheck static analysis configuration and usage for shell script quality. Use when setting up linting infrastructure, fixing code issues, or ensuring script portability.",
+      "plugin": "shell-scripting",
+      "category": "languages",
+      "keywords": [
+        "bash",
+        "shell",
+        "scripting",
+        "automation",
+        "posix",
+        "shellcheck",
+        "testing"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "bats-testing-patterns",
+      "description": "Master Bash Automated Testing System (Bats) for comprehensive shell script testing. Use when writing tests for shell scripts, CI/CD pipelines, or requiring test-driven development of shell utilities.",
+      "plugin": "shell-scripting",
+      "category": "languages",
+      "keywords": [
+        "bash",
+        "shell",
+        "scripting",
+        "automation",
+        "posix",
+        "shellcheck",
+        "testing"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "git-advanced-workflows",
+      "description": "Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature branches, or troubleshooting repository issues.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "sql-optimization-patterns",
+      "description": "Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically improve database performance and eliminate slow queries. Use when debugging slow queries, designing database schemas, or optimizing application performance.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "error-handling-patterns",
+      "description": "Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or improving application reliability.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "code-review-excellence",
+      "description": "Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or mentoring developers.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "e2e-testing-patterns",
+      "description": "Master end-to-end testing with Playwright and Cypress to build reliable test suites that catch bugs, improve confidence, and enable fast deployment. Use when implementing E2E tests, debugging flaky tests, or establishing testing standards.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "auth-implementation-patterns",
+      "description": "Master authentication and authorization patterns including JWT, OAuth2, session management, and RBAC to build secure, scalable access control systems. Use when implementing auth systems, securing APIs, or debugging security issues.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "debugging-strategies",
+      "description": "Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use when investigating bugs, performance issues, or unexpected behavior.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    },
+    {
+      "name": "monorepo-management",
+      "description": "Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, scalable multi-package repositories with optimized builds and dependency management. Use when setting up monorepos, optimizing builds, or managing shared dependencies.",
+      "plugin": "developer-essentials",
+      "category": "development",
+      "keywords": [
+        "git",
+        "sql",
+        "debugging",
+        "testing",
+        "authentication",
+        "code-review",
+        "monorepo",
+        "essential"
+      ],
+      "has_references": false,
+      "has_assets": false
+    }
+  ]
+}

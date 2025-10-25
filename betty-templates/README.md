@@ -2,6 +2,17 @@
 
 This directory contains extracted Claude Code artifacts from the `wshobson/agents` repository, organized in JSON format for easy import into your Betty repository.
 
+## ⚠️ Files Too Large? Use QUICKSTART.md
+
+**The original JSON files are too large to paste into Claude Code prompts.**
+
+👉 **See [QUICKSTART.md](QUICKSTART.md) for the easy import methods!**
+
+**Quick options:**
+1. **Use the import script** (easiest): `python3 import_to_betty.py --priority high`
+2. **Use split files** in `split/` directory (smaller, organized chunks)
+3. **Browse metadata** in `metadata/` directory (no content, just names/descriptions)
+
 ## 📊 Overview
 
 **Total Artifacts Extracted:**
@@ -14,7 +25,13 @@ This directory contains extracted Claude Code artifacts from the `wshobson/agent
 
 ## 📁 Files in This Directory
 
-### Core Artifact Files
+### Quick Start
+
+- **[QUICKSTART.md](QUICKSTART.md)** - ⭐ Start here! Easy import methods
+- **[USAGE_EXAMPLES.md](USAGE_EXAMPLES.md)** - Detailed Python/bash examples
+- **import_to_betty.py** - Import script for bulk operations
+
+### Core Artifact Files (⚠️ Too Large for Prompts)
 
 | File | Description | Count | Size |
 |------|-------------|-------|------|
@@ -27,6 +44,36 @@ This directory contains extracted Claude Code artifacts from the `wshobson/agent
 | `summary.json` | Repository overview and statistics | - | <1 KB |
 
 **✨ NEW: JSON files now contain the complete markdown content of each artifact, not just metadata!**
+
+### Split Files (Recommended - Smaller & Easier)
+
+Located in `split/` directory:
+
+**By Priority:**
+- `agents-priority-high.json` (281 KB) - 17 essential agents
+- `commands-priority-high.json` (200 KB) - 11 key commands
+- `skills-priority-high.json` (356 KB) - 17 core skills
+
+**By Plugin (Smallest!):**
+- `plugin-debugging-toolkit.json` (10 KB) ✓
+- `plugin-git-pr-workflows.json` (55 KB) ✓
+- `plugin-developer-essentials.json` (120 KB)
+- `plugin-python-development.json` (133 KB)
+- And more...
+
+**By Category:**
+- `agents-category-development.json` (121 KB)
+- `agents-category-languages.json` (113 KB)
+- `agents-category-ai-ml.json` (68 KB)
+- And more...
+
+### Metadata Files (Just Names/Descriptions)
+
+Located in `metadata/` directory:
+
+- `agents-metadata.json` (84 KB) - Browse without loading full content
+- `commands-metadata.json` (33 KB) - Browse without loading full content
+- `skills-metadata.json` (33 KB) - Browse without loading full content
 
 ### Curated Recommendations
 
@@ -61,46 +108,45 @@ The artifacts are organized into 23 categories:
 
 ## 🚀 How to Use These Templates
 
-### Option 1: Using meta.agent Task
+**👉 See [QUICKSTART.md](QUICKSTART.md) for detailed instructions!**
 
-If you have a `meta.agent` task configured in your Betty repository:
+### Quick Start (3 Steps)
 
+**Option 1: Use the Import Script (Easiest)**
 ```bash
-# Import specific agents
-meta.agent import --from agents.json --select "python-pro,typescript-pro,backend-architect"
+# Copy templates to Betty
+cp -r betty-templates /path/to/betty/
 
-# Import by category
-meta.agent import --from agents.json --category "development"
-
-# Import recommended essentials
-meta.agent import --from recommended-essentials.json
+# Run import script
+cd /path/to/betty/betty-templates
+python3 import_to_betty.py --priority high
 ```
 
-### Option 2: Manual Import
-
-1. **Choose artifacts** from the JSON files
-2. **Copy source files** from the `plugins/` directory
-3. **Place in Betty's .claude directory:**
-   ```
-   betty/.claude/
-   ├── agents/
-   ├── commands/
-   └── skills/
-   ```
-
-### Option 3: Selective Plugin Installation
-
-Install specific plugins from the marketplace:
-
+**Option 2: Use Split JSON Files (Smaller)**
 ```bash
-# Add the marketplace (if not already added)
-/plugin marketplace add wshobson/agents
+# These are small enough to work with:
+# - betty-templates/split/plugin-*.json
+# - betty-templates/split/*-category-*.json
+# - betty-templates/metadata/*.json
 
-# Install specific plugins
-/plugin install python-development
-/plugin install developer-essentials
-/plugin install git-pr-workflows
+# Example: View what's in python-development
+jq '.agents[].name' split/plugin-python-development.json
 ```
+
+**Option 3: Manual Extract with jq**
+```bash
+# Extract a single agent
+jq -r '.agents[] | select(.name=="python-pro") | .content' \
+  split/plugin-python-development.json > betty/.claude/agents/python-pro.md
+```
+
+### Don't Use (Too Large)
+
+❌ **agents.json** (1.2 MB) - Use split files instead
+❌ **commands.json** (1.3 MB) - Use split files instead
+❌ **skills.json** (917 KB) - Use split files instead
+
+These are kept for completeness but are too large for Claude Code prompts.
 
 ## 🎯 Recommended Artifacts for Betty
 
